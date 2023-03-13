@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>My New Hugo Site</title>
+        <link>http://didaman.github.io/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bingzhen100@163.com (luckyfrog)</managingEditor>
+            <webMaster>bingzhen100@163.com (luckyfrog)</webMaster><lastBuildDate>Mon, 13 Mar 2023 18:00:15 &#43;0800</lastBuildDate>
+            <atom:link href="http://didaman.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>First</title>
+    <link>http://didaman.github.io/posts/first/</link>
+    <pubDate>Mon, 13 Mar 2023 18:00:15 &#43;0800</pubDate>
+    <author>luckyfrog</author>
+    <guid>http://didaman.github.io/posts/first/</guid>
+    <description><![CDATA[贵在坚持 日拱一卒，功不唐捐。每天无论学了什么，学了多少。有积累就能有收获。]]></description>
+</item>
+</channel>
+</rss>
