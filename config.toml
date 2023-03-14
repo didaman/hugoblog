@@ -8,6 +8,10 @@ title = 'My New Hugo Site'
   email = "bingzhen100@163.com"
   link = ""
 
+[params.page.math]
+  enable = true
+
+
 # Menu config
 [menu]
   [[menu.main]]
