@@ -1,10 +1,8 @@
----
-title: "Go_basic_type"
-date: 2023-03-14T14:46:43+08:00
-draft: true
-tags: ['Go']
-categories: ['编程语言']
----
++++
+title = "Go_basic_type"
+date = 2023-03-14T14:46:43+08:00
+draft = false
++++
 
 Go是强类型语言，不会像python一样进行隐式转换。任何不同类型之间的转换都必须显式说明，也不支持类似C语言中的运算符重载。
 

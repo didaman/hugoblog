@@ -1,10 +1,10 @@
----
-title: "Go_intro"
-date: 2023-03-14T14:50:39+08:00
-draft: true
-tags: ['Go']
-categories: ['编程语言']
----
++++
+title = "Go_intro"
+date = '2023-03-14T14:50:39+08:00'
+draft = true
+tags = ['Go']
+categories = ['编程语言']
++++
 
 # Golang
 Golang(又称Go)是Google公司开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。

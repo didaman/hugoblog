@@ -1,9 +1,9 @@
----
-title: "Dijkstra"
-date: 2023-03-13T20:34:15+08:00
-draft: false
-tags: ['算法']
----
++++
+title = 'Dijkstra'
+date = '2023-03-13T20:34:15+08:00'
+draft = false
+tags = ['算法']
++++
 
 # Dijkstra 算法详解
 
