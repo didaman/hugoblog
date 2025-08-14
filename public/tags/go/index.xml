@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on 我的全新 Hugo 网站</title>
+    <link>http://localhost:1313/tags/go/</link>
+    <description>Recent content in Go on 我的全新 Hugo 网站</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 14 Mar 2023 14:50:39 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go_intro</title>
+      <link>http://localhost:1313/posts/go_intro/</link>
+      <pubDate>Tue, 14 Mar 2023 14:50:39 +0800</pubDate>
+      <guid>http://localhost:1313/posts/go_intro/</guid>
+      <description>&lt;h1 id=&#34;golang&#34;&gt;Golang&lt;/h1&gt;&#xA;&lt;p&gt;Golang(又称Go)是Google公司开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。&lt;/p&gt;&#xA;&lt;h2 id=&#34;go的特点&#34;&gt;Go的特点&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;最大特点是对并发支持很好，从本质上支持并发编程。&lt;/li&gt;&#xA;&lt;li&gt;没有类和继承的概念，通过接口（interface）的概念实现多态性。&lt;/li&gt;&#xA;&lt;li&gt;函数是基本构件，使用方法灵活，是高级&lt;/li&gt;&#xA;&lt;li&gt;语法接近C语言，同时也具有一些动态语言的特性。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;go是不是面向对象&#34;&gt;Go是不是面向对象&lt;/h2&gt;&#xA;&lt;p&gt;根据官网的解释，Yes and No。明显go是允许OO的编程风格的，但又缺乏一些Java和C++中的常见类型继承结构。Go的interface属于&lt;strong&gt;隐式继承&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Go_basic_type</title>
+      <link>http://localhost:1313/posts/go_basic_type/</link>
+      <pubDate>Tue, 14 Mar 2023 14:46:43 +0800</pubDate>
+      <guid>http://localhost:1313/posts/go_basic_type/</guid>
+      <description>&lt;p&gt;Go是强类型语言，不会像python一样进行隐式转换。任何不同类型之间的转换都必须显式说明，也不支持类似C语言中的运算符重载。&lt;/p&gt;&#xA;&lt;h1 id=&#34;数字类型&#34;&gt;数字类型&lt;/h1&gt;&#xA;&lt;p&gt;Go语言支持整型和浮点型数字，并且原生支持复数。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

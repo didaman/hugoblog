@@ -1,18 +1,55 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>My New Hugo Site</title>
-        <link>http://didaman.github.io/</link>
-        <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>bingzhen100@163.com (luckyfrog)</managingEditor>
-            <webMaster>bingzhen100@163.com (luckyfrog)</webMaster><lastBuildDate>Mon, 13 Mar 2023 18:00:15 &#43;0800</lastBuildDate>
-            <atom:link href="http://didaman.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <title>我的全新 Hugo 网站</title>
+        <link>http://localhost:1313/</link>
+        <description>This is my</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 14 Mar 2023 14:50:39 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Go_intro</title>
+    <link>http://localhost:1313/posts/go_intro/</link>
+    <pubDate>Tue, 14 Mar 2023 14:50:39 &#43;0800</pubDate>
+    <author>didaman</author>
+    <guid>http://localhost:1313/posts/go_intro/</guid>
+    <description><![CDATA[<h1 id="golang">Golang</h1>
+<p>Golang(又称Go)是Google公司开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。</p>
+<h2 id="go的特点">Go的特点</h2>
+<ul>
+<li>最大特点是对并发支持很好，从本质上支持并发编程。</li>
+<li>没有类和继承的概念，通过接口（interface）的概念实现多态性。</li>
+<li>函数是基本构件，使用方法灵活，是高级</li>
+<li>语法接近C语言，同时也具有一些动态语言的特性。</li>
+</ul>
+<h2 id="go是不是面向对象">Go是不是面向对象</h2>
+<p>根据官网的解释，Yes and No。明显go是允许OO的编程风格的，但又缺乏一些Java和C++中的常见类型继承结构。Go的interface属于<strong>隐式继承</strong>。</p>]]></description>
+</item>
+<item>
+    <title>Go_basic_type</title>
+    <link>http://localhost:1313/posts/go_basic_type/</link>
+    <pubDate>Tue, 14 Mar 2023 14:46:43 &#43;0800</pubDate>
+    <author>didaman</author>
+    <guid>http://localhost:1313/posts/go_basic_type/</guid>
+    <description><![CDATA[<p>Go是强类型语言，不会像python一样进行隐式转换。任何不同类型之间的转换都必须显式说明，也不支持类似C语言中的运算符重载。</p>
+<h1 id="数字类型">数字类型</h1>
+<p>Go语言支持整型和浮点型数字，并且原生支持复数。</p>]]></description>
+</item>
+<item>
+    <title>Dijkstra</title>
+    <link>http://localhost:1313/posts/dijkstra/</link>
+    <pubDate>Mon, 13 Mar 2023 20:34:15 &#43;0800</pubDate>
+    <author>didaman</author>
+    <guid>http://localhost:1313/posts/dijkstra/</guid>
+    <description><![CDATA[<h1 id="dijkstra-算法详解">Dijkstra 算法详解</h1>
+<p>最短路径问题（Shortest Path）是图论研究中经典问题之一，目的是寻找图中两个节点之间最短路径。求解这类问题经典算法有Dijsktra算法、Floyd算法、A*算法等。其中Dijsktra算法最早也最经典。</p>]]></description>
+</item>
+<item>
     <title>First</title>
-    <link>http://didaman.github.io/posts/first/</link>
+    <link>http://localhost:1313/posts/first/</link>
     <pubDate>Mon, 13 Mar 2023 18:00:15 &#43;0800</pubDate>
-    <author>luckyfrog</author>
-    <guid>http://didaman.github.io/posts/first/</guid>
-    <description><![CDATA[贵在坚持 日拱一卒，功不唐捐。每天无论学了什么，学了多少。有积累就能有收获。]]></description>
+    <author>didaman</author>
+    <guid>http://localhost:1313/posts/first/</guid>
+    <description><![CDATA[<h1 id="贵在坚持">贵在坚持</h1>
+<p>日拱一卒，功不唐捐。每天无论学了什么，学了多少。有积累就能有收获。</p>]]></description>
 </item>
 </channel>
 </rss>
