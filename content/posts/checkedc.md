@@ -81,3 +81,62 @@ InstalledDir: C:\Users\zbz\Documents\AWork\Projects\checked-c\build\bin
 ```
 clang -g -fcheckedc-extension -fsanitize=bounds -o demo.exe demo.c
 ```
+
+# vscode调试
+准备环境
+- vscode
+- clang 编译器
+- C/C++ 插件
+
+配置launch.json 用cppvsdbg模式。仅用于Windows系统。虽然checkedc-clang包含clang编译器和lldb调试器，但是lldb-mi已经废弃不再支持。所以windows平台用cppvsdbg，调试生成PDB/CodeView 信息。详细调试逻辑参考[[VScode调试架构]]
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug checkedc-clang Program",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "console": true,
+      "preLaunchTask": "build-standard-C",
+    }
+  ]
+}
+```
+
+## 调试显示信息
+在调试过程中，调试器不显示 `_Ptr<int>` 类型，本质是因为 Checked C 是 C 语言的非标准扩展，其类型系统未被调试器原生支持，且编译器在生成调试信息时会优先使用标准类型表示以确保兼容性。
+
+一些对指针的约束操作，仅在编译期告诉编译器指针的约束。编译后的二进制文件中，被修饰的指针，底层存储的依然是普通的内存地址。
+
+
+编译器在生成调试符号（用于调试器解析类型的信息）时，通常会 “剥离” `_Nonnull` 和 `_Nullable` 这类 Checked C 特有的修饰符，仅保留标准 C 兼容的类型信息。 例如checkedc代码
+```c
+int main() {
+    int x = 0;
+    _Ptr<int> xp = &x;
+    // xp = xp + 1;  // compile-time error: pointer arithmetic not allowed on _Ptr
+    printf("%d\n", *xp);
+}
+```
+变量xp是一个Ptr类型，一个安全的指针。编译后，用命令查看符号文件
+```
+llvm-pdbutil dump -symbols build\checked_pointer.pdb > checked_ptr_pdb.txt
+```
+得到结果
+```txt
+     156 | S_LOCAL [size = 16] `xp`
+           type=0x0674 (int*), flags = none
+     172 | S_DEFRANGE_FRAMEPOINTER_REL [size = 16]
+           offset = 40, range = [0001:29844,+66)
+           gaps = 2
+     188 | S_END [size = 4]
+```
+
+可以看到，xp变量，定义的类型是`int*`, 和标准c语言定义的指针是一样的。
