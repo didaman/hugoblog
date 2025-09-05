@@ -1,7 +1,7 @@
 +++
 title = "Go_intro"
 date = '2023-03-14T14:50:39+08:00'
-draft = true
+draft = false
 tags = ['Go']
 categories = ['编程语言']
 +++
