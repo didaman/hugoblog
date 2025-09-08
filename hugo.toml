@@ -61,3 +61,5 @@ hasCJKLanguage = true
   description = "这是我的全新 Hugo 网站"
   [params.favicon]
     icon = "/favicon.ico"
+  [params.math]
+    enable = true
